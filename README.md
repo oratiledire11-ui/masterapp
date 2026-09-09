@@ -1,30 +1,38 @@
-# Christoffel's Kitchen
+# MenuManagerApp
 
-React Native / Expo implementation of the mobile menu manager shown in the supplied design.
+## Overview
+MenuManagerApp is a simple React Native application for managing restaurant menu items.  
+It allows users to **add**, **update**, and **view** menu items with details such as name, description, price, and course type.
 
-## Included screens
+---
 
-- Home dashboard
-- Add New Dish
-- Full Menu
-- Edit Dish
-- Delete dish confirmation
-- Live menu item count
-- Starter / Main / Dessert selection
-- South African Rand pricing
+## Features
+- **Home Screen**: Navigation hub with buttons to access different screens.
+- **Add Item Screen**: Add new menu items with name, description, price, and course.
+- **Update Item Screen**: Edit existing menu items.
+- **View Menu Screen**: Display all menu items in a list.
 
-## Run in VS Code
+---
 
-1. Install Node.js.
-2. Open this folder in VS Code.
-3. Open the VS Code terminal.
-4. Run:
+## Project Structure
+- `App.tsx` → Main entry point with navigation setup.
+- `Screens/` → Contains all screen components:
+  - `HomeScreen.tsx`
+  - `AddItemScreen.tsx`
+  - `UpdateItemScreen.tsx`
+  - `ViewMenuScreen.tsx`
+- `MenuContext` → Provides state management for menu items.
 
-```bash
-npm install
-npx expo start
-```
+---
 
-5. Scan the QR code with Expo Go, or press `a` for Android / `i` for iOS.
+## Requirements
+- Node.js (v18 or later recommended)
+- npm or yarn
+- React Native dependencies
 
-The menu currently uses local React state, so changes are available while the app is running. A database/backend can be added later.
+---
+
+## How to Run
+1. Install dependencies:
+   ```bash
+   npm install
